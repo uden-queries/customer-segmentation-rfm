@@ -30,13 +30,11 @@ I used Python for the end-to-end analysis process:
 The analysis reveals a critical finding: **"Lost Customers"** make up the 2nd largest segment.
 
 ![Customer Distribution](distribusi_segmen_pelanggan.png)
-*(Note: Ensure the image filename matches what you uploaded)*
 
 ### 2. Customer Strategy Map (Recency vs Frequency)
 The scatter plot highlights the distinct behavior between loyalists (top-left) and one-time buyers (bottom-right).
 
 ![Scatter Plot](peta_sebaran_pelanggan.png)
-*(Note: Ensure the image filename matches what you uploaded)*
 
 ## 💡 Business Recommendations
 
