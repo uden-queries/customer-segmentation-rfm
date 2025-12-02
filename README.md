@@ -35,7 +35,7 @@ The analysis reveals a critical finding: **"Lost Customers"** make up the 2nd la
 ### 2. Customer Strategy Map (Recency vs Frequency)
 The scatter plot highlights the distinct behavior between loyalists (top-left) and one-time buyers (bottom-right).
 
-![Scatter Plot](rfm_scatterplot.png)
+![Scatter Plot](Peta Sebaran Pelanggan.png)
 *(Note: Ensure the image filename matches what you uploaded)*
 
 ## 💡 Business Recommendations
