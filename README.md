@@ -29,7 +29,7 @@ I used Python for the end-to-end analysis process:
 ### 1. Customer Distribution
 The analysis reveals a critical finding: **"Lost Customers"** make up the 2nd largest segment.
 
-![Customer Distribution](rfm_distribution.png)
+![Customer Distribution](distribusi_segmen_pelanggan.png)
 *(Note: Ensure the image filename matches what you uploaded)*
 
 ### 2. Customer Strategy Map (Recency vs Frequency)
