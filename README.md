@@ -54,5 +54,5 @@ Based on the high volume of "Lost Customers", here is my proposed action plan fo
 ## 📂 Project Structure
 - `Customer_Segmentation.ipynb`: Python code for Data Cleaning, RFM Calculation, and Visualization.
 - `distribusi_segmen_pelanggan.png`: Bar chart showing segment counts.
-- `online_retail_II.csv`: Dataset used (Source: UCI Machine Learning Repository).
+- `online_retail_II.csv`: Dataset used (Source: Kaggle Repository).
 
