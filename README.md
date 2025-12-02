@@ -26,8 +26,7 @@ I performed a complete data analysis pipeline:
 ## 📊 Key Findings & Visualizations
 
 ### 1. The "Churn" Warning Signal
-![Distribution Graph](distribusi_Segmen_pelanggan.png)
-*(Note: Please ensure this matches your uploaded image filename)*
+![Distribution Graph](distribusi_segmen_pelanggan.png)
 
 **Insight from data:**
 As seen in the chart above, the segments are ranked by population:
@@ -38,7 +37,6 @@ As seen in the chart above, the segments are ranked by population:
 
 ### 2. Customer Behavior Map (Recency vs Frequency)
 ![Scatter Plot](peta_sebaran_pelanggan.png)
-*(Note: Please ensure this matches your uploaded image filename)*
 
 The scatter plot confirms the split:
 - A dense cluster at the **bottom-right** (High Recency, Low Frequency) represents the **Lost Customers**.
@@ -55,8 +53,6 @@ Based on the high volume of "Lost Customers", here is my proposed action plan fo
 
 ## 📂 Project Structure
 - `Customer_Segmentation.ipynb`: Python code for Data Cleaning, RFM Calculation, and Visualization.
-- `rfm_distribution.png`: Bar chart showing segment counts.
+- `distribusi_segmen_pelanggan.png`: Bar chart showing segment counts.
 - `online_retail_II.csv`: Dataset used (Source: UCI Machine Learning Repository).
 
----
-*Connect with me on LinkedIn if you want to discuss how data can drive business retention!*
