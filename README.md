@@ -47,10 +47,3 @@ Based on the analysis, here are the strategic recommendations:
 | **At Risk** ⚠️ | Win-Back | **URGENT:** Send personalized "We Miss You" emails with limited-time offers. |
 | **Lost Customers** 💤 | Reactivation | Low-cost automated campaigns. Do not overspend on ads for this group. |
 
-## 📂 File Structure
-- `Customer_Segmentation_RFM.ipynb`: The complete Python notebook containing code and analysis.
-- `rfm_distribution.png`: Visualization of segment counts.
-- `rfm_scatterplot.png`: Visualization of Recency vs Frequency.
-
----
-*If you find this project useful, feel free to connect with me on LinkedIn!*
