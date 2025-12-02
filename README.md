@@ -1,49 +1,62 @@
-# 🛒 Customer Segmentation Analysis (RFM)
+# 🛒 Customer Segmentation & Churn Analysis (RFM)
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
-![Library](https://img.shields.io/badge/Library-Pandas%20%7C%20Seaborn-orange)
-![Status](https://img.shields.io/badge/Status-Completed-green)
+![Analysis](https://img.shields.io/badge/Analysis-RFM%20Segmentation-orange)
+![Status](https://img.shields.io/badge/Insight-Actionable-green)
 
-## 📌 Project Overview
-This project focuses on analyzing customer purchasing behavior for a UK-based online retailer. Using the **RFM (Recency, Frequency, Monetary)** technique, I segmented customers to identify "Champions", "Loyal Customers", and "At-Risk Customers". 
+## 📌 Executive Summary
+**"Acquiring a new customer is 5x more expensive than retaining an existing one."**
 
-The goal is to provide **actionable insights** for the marketing team to improve customer retention and optimize campaign budgets.
+This project analyzes over 1 million transaction records from a UK-based online retailer using **Python** and **RFM Analysis**. 
 
-## 💼 Business Problem
-The company was struggling with a "one-size-fits-all" marketing approach, leading to wasted budget and high churn rates. They needed a data-driven way to identify:
-1. Who are the most valuable customers?
-2. Which customers are about to churn?
-3. How to tailor marketing strategies for each group?
+The goal was not just to group customers, but to diagnose the health of the business. The analysis uncovered a critical finding: **A massive portion of the customer base has churned (stopped buying), signaling an urgent need for a retention strategy.**
+
+## 💼 The Challenge
+The marketing team was using a "spray and pray" approach—sending the same promotions to everyone. This resulted in:
+1.  Wasted marketing budget on inactive users.
+2.  Missed opportunities to upsell loyal customers.
+3.  Inability to spot customers who are about to leave.
 
 ## 🛠️ Methodology
-I used Python for the end-to-end analysis process:
+I performed a complete data analysis pipeline:
+1.  **Data Cleaning:** Handled missing values (`Customer ID`) and removed cancelled transactions (`Invoice 'C'`) to ensure data integrity.
+2.  **RFM Modeling:** Calculated Recency, Frequency, and Monetary values for every unique customer.
+3.  **Customer Segmentation:** Used Quintile Scoring (1-5 scale) to classify customers into behavioral segments.
 
-1. **Data Cleaning:** - Handled 1M+ rows of transaction data.
-   - Removed cancelled orders (invoice starting with 'C') and null Customer IDs.
-2. **Feature Engineering:** - Calculated **Recency** (days since last purchase), **Frequency** (total transactions), and **Monetary** (total spend) for each customer.
-3. **Scoring & Segmentation:** - Applied Quintile Scoring (scale 1-5) to rank customers.
-   - Created segments based on RFM scores (e.g., 'Champions', 'Hibernating').
+## 📊 Key Findings & Visualizations
 
-## 📊 Key Insights & Visualizations
+### 1. The "Churn" Warning Signal
+![Distribution Graph](distribusi_Segmen_pelanggan.png)
+*(Note: Please ensure this matches your uploaded image filename)*
 
-### 1. Customer Distribution
-The analysis reveals a critical finding: **"Lost Customers"** make up the 2nd largest segment.
+**Insight from data:**
+As seen in the chart above, the segments are ranked by population:
+1.  **Others:** Average customers (The general mass).
+2.  **Lost Customers:** 🚨 **The 2nd largest group.** This indicates a "Leaky Bucket" problem—the business acquires customers but fails to keep them engaged.
+3.  **Potential Loyalists:** A promising group that needs nurturing.
+4.  **Champions:** The smallest, most exclusive group driving high revenue.
 
-![Customer Distribution](distribusi_segmen_pelanggan.png)
-
-### 2. Customer Strategy Map (Recency vs Frequency)
-The scatter plot highlights the distinct behavior between loyalists (top-left) and one-time buyers (bottom-right).
-
+### 2. Customer Behavior Map (Recency vs Frequency)
 ![Scatter Plot](peta_sebaran_pelanggan.png)
+*(Note: Please ensure this matches your uploaded image filename)*
 
-## 💡 Business Recommendations
+The scatter plot confirms the split:
+- A dense cluster at the **bottom-right** (High Recency, Low Frequency) represents the **Lost Customers**.
+- A valuable but small cluster at the **top-left** represents the **Champions**.
 
-Based on the analysis, here are the strategic recommendations:
+## 💡 Strategic Recommendations
+Based on the high volume of "Lost Customers", here is my proposed action plan for the marketing team:
 
-| Customer Segment | Strategy | Action Plan |
-| :--- | :--- | :--- |
-| **Champions** 🏆 | Retention | Provide VIP access to new products. Do not offer discounts (they are not price-sensitive). |
-| **Loyal Customers** 🤝 | Up-Selling | Recommend higher-value items or bundles to increase basket size. |
-| **At Risk** ⚠️ | Win-Back | **URGENT:** Send personalized "We Miss You" emails with limited-time offers. |
-| **Lost Customers** 💤 | Reactivation | Low-cost automated campaigns. Do not overspend on ads for this group. |
+| Priority | Segment | Strategy | Actionable Tactic |
+| :--- | :--- | :--- | :--- |
+| **URGENT** | **Lost Customers** | **Win-Back** | Do not span them. Send a specific "We Miss You" email with a high-value incentive (e.g., Free Shipping) to reactivate them. |
+| **High** | **Champions** | **Retention** | Create a VIP Club. Offer early access to new products instead of discounts to maintain profit margins. |
+| **Medium** | **Potential Loyalists** | **Upsell** | Use "Nudge Marketing". Offer a discount on the *second* purchase to turn them into habitual buyers. |
 
+## 📂 Project Structure
+- `Customer_Segmentation.ipynb`: Python code for Data Cleaning, RFM Calculation, and Visualization.
+- `rfm_distribution.png`: Bar chart showing segment counts.
+- `online_retail_II.csv`: Dataset used (Source: UCI Machine Learning Repository).
+
+---
+*Connect with me on LinkedIn if you want to discuss how data can drive business retention!*
