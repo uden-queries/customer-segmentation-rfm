@@ -5,7 +5,6 @@
 ![Status](https://img.shields.io/badge/Insight-Actionable-green)
 
 ## 📌 Executive Summary
-**"Acquiring a new customer is 5x more expensive than retaining an existing one."**
 
 This project analyzes over 1 million transaction records from a UK-based online retailer using **Python** and **RFM Analysis**. 
 
